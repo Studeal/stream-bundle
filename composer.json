@@ -1,0 +1,29 @@
+{
+  "name": "studeal/stream-bundle",
+  "description": "Build newsfeeds and activity feeds on Symfony using getstream.io",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Quentin Dequippe",
+      "email": "qd@studeal.fr"
+    }
+  ],
+  "require": {
+    "php": "^5.6 || ^7.0",
+    "symfony/http-kernel": "^3.4|^4.0",
+    "get-stream/stream": "^3.0",
+    "symfony/config": "^3.4 || ^4.3",
+    "symfony/dependency-injection": "^3.4 || ^4.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Studeal\\StreamBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Studeal\\StreamBundle\\Tests\\": "tests/"
+    }
+  }
+}

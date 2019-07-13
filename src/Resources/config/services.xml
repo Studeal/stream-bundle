@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="stream_client" class="GetStream\Stream\Client" public="false" lazy="true">
+            <argument key="$api_key">%env(GET_STREAM_API_KEY)%</argument>
+            <argument key="$api_secret">%env(GET_STREAM_API_SECRET)%</argument>
+        </service>
+
+    </services>
+
+</container>
